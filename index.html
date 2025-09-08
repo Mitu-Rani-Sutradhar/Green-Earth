@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <!--fontawesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--google font -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- daisyUI and tailwind -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- stylesheet -->
-     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
 
 
 </head>
@@ -27,97 +31,180 @@
     <!-- header section start -->
     <header class="flex gap-2 lg:flex justify-between items-center bg-[#15803D] h-[91px] px-15">
 
-       <div class="">
-        <h2 class="text-white">Green Earth<h2>
+        <div class="">
+            <h2 class="text-white">Green Earth<h2>
         </div>
 
-       <div class="ml-4 flex items-center lg:flex gap-10 text-white">
-         <p>About</p>
-         <p>Gallery</p>
-         <p>Plant a Tree</p>
-       </div>
+        <div class="ml-4 flex items-center lg:flex gap-10 text-white">
+            <p>About</p>
+            <p>Gallery</p>
+            <p>Plant a Tree</p>
+        </div>
 
-       <div>
-       <button class="ml-5 lg:btn btn-active btn-warning rounded-2xl text-[#15803D] bg-[#FACC15]">Plant a Tree</button>
-       </div>
+        <div>
+            <button class="ml-5 lg:btn btn-active btn-warning rounded-2xl text-[#15803D] bg-[#FACC15]">Plant a
+                Tree</button>
+        </div>
 
     </header>
     <!-- header section end -->
-    
+
     <!-- banner section start -->
-    <section class="banner bg-[#CFF0DC] lg:h-[383px] flex justify-between items-center">
+    <section class="banner bg-[#CFF0DC] lg:h-[383px] flex justify-between ">
 
         <div class="mx-auto justify-around items-center gap-25 lg:flex">
 
-        <img class="lg:w-[400px] h-[383px]" src="./assets/hero-leaf1.png" alt="">
-        
+            <img class="lg:w-[400px] h-[383px]" src="./assets/hero-leaf1.png" alt="">
+
             <div class="mt-8 lg:items-center text-center">
-             <h1 class="text-center text-[#1F2937] font-bold text-3xl">Plant a Tree, Grow a Future</h1>
-            <p class="text-center py-6 text-[#1F2937]">Join our mission to plant 1 million trees and make the Earth greener for future
-            generations.</p>
-             
-            <button class="ml-5 lg:btn btn-active btn-warning rounded-2xl text-[#15803D] bg-[#FACC15]"> Get Involved </button> 
-        
+                <h1 class="text-center text-[#1F2937] font-bold text-3xl">Plant a Tree, Grow a Future</h1>
+                <p class="text-center py-6 text-[#1F2937]">Join our mission to plant 1 million trees and make the Earth
+                    greener for future
+                    generations.</p>
+
+                <button class="ml-5 lg:btn btn-active btn-warning rounded-2xl text-[#15803D] bg-[#FACC15]"> Get Involved
+                </button>
+
             </div>
-
-       
-          <img class="w-[400px] h-[383px]" src="./assets/hero-leaf2.png" alt="">
-    
-
+            <img class="w-[400px] h-[383px]" src="./assets/hero-leaf2.png" alt="">
         </div>
-    
     </section>
     <!-- banner section end -->
 
-    <section class="card  bg-[#F0FDF4]">
-
-     <div class="w-11/12 mx-auto lg:h-[873px]">
-
-     <h2 class="text-center text-[#1F2937] font-bold text-xl">Choose Your Trees</h2>
-
-    <!-- catagories part start -->
-       <div>
-        <h3 class="font-bold pb-2">Categories</h3>
-        <div id="category-container">
-       </div>
+    <section class="card  bg-[#F0FDF4] p-2">
+        <h2 class="text-center text-[#1F2937] font-bold text-xl pt-10 pb-6">Choose Your Trees</h2>
+        <div class="w-11/12 mx-auto lg:flex justify-around ml-15">
+            <!-- categories part start -->
+            <div class="w-[200px] lg:w-2/12 mb-25">
+                <h3 class="font-bold pb-2">Categories</h3>
+                <div class="space-y-3" id="category-container">
+                </div>
+            </div>
+            <!-- categories part end -->
+            <!-- card part start -->
+            <div id="card-conainer" class="w-8/12 lg:grid grid-cols-3 gap-18 mr-20 pb-25">
  
-       </div>
-    <!-- catagories part start -->
-        
-     
+                 <div class="p-4 w-[320px] h-[420px] bg-white rounded-xl mb-3">
+                    <div class="h-[180px] w-full bg-gray-200">
+                        
+                    </div>
+                    <h3 class="font-bold py-2">Mango Tree</h3>
+                    <p class="text-regular h-[80px]">A fast-growing tropical tree that produces delicious, juicy mangoes
+                        during summer. Its dense green</p>
+                    <div class="flex justify-between py-3">
+                        <p class="bg-[#A4FDC5] h-[22px] w-[100px] text-center rounded-2xl"> Fruit Tree </p>
+                        <p class="pr-5">৳500</p>
+                    </div>
+                    <button class="bg-[#15803D] w-full h-[30px] text-white rounded-2xl">Add to Cart</button>
+                </div>  
 
-    
+                 <div class="p-4 w-[320px] h-[420px] bg-white rounded-xl mb-3">
+                    <div class="h-[180px] w-full bg-gray-200">
+                    
+                    </div>
+                    <h3 class="font-bold py-2">Mango Tree</h3>
+                    <p class="text-regular h-[80px]">A fast-growing tropical tree that produces delicious, juicy mangoes
+                        during summer. Its dense green</p>
+                    <div class="flex justify-between py-3">
+                        <p class="bg-[#A4FDC5] h-[22px] w-[100px] text-center rounded-2xl"> Fruit Tree </p>
+                        <p class="pr-5">৳500</p>
+                    </div>
+                    <button class="bg-[#15803D] w-full h-[30px] text-white rounded-2xl">Add to Cart</button>
+                </div>  
 
-    </section>
-    
+                 <div class="p-4 w-[320px] h-[420px] bg-white rounded-xl mb-3">
+                    <div class="h-[180px] w-full bg-gray-200">
+                        
+                    </div>
+                    <h3 class="font-bold py-2">Mango Tree</h3>
+                    <p class="text-regular h-[80px]">A fast-growing tropical tree that produces delicious, juicy mangoes
+                        during summer. Its dense green</p>
+                    <div class="flex justify-between py-3">
+                        <p class="bg-[#A4FDC5] h-[22px] w-[100px] text-center rounded-2xl"> Fruit Tree </p>
+                        <p class="pr-5">৳500</p>
+                    </div>
+                    <button class="bg-[#15803D] w-full h-[30px] text-white rounded-2xl">Add to Cart</button>
+                </div>  
 
+                 <div class="p-4 w-[320px] h-[420px] bg-white rounded-xl mb-3">
+                    <div class="h-[180px] w-full bg-gray-200">
+                    
+                    </div>
+                    <h3 class="font-bold py-2">Mango Tree</h3>
+                    <p class="text-regular h-[80px]">A fast-growing tropical tree that produces delicious, juicy mangoes
+                        during summer. Its dense green</p>
+                    <div class="flex justify-between py-3">
+                        <p class="bg-[#A4FDC5] h-[22px] w-[100px] text-center rounded-2xl"> Fruit Tree </p>
+                        <p class="pr-5">৳500</p>
+                    </div>
+                    <button class="bg-[#15803D] w-full h-[30px] text-white rounded-2xl">Add to Cart</button>
+                </div>  
 
-     
-    <!-- campaign section start -->
-    <section class="campaign mx-auto bg-[#F0FDF4] ">
-          
-        <h2 class="text-center py-5 text-[#1F2937] font-bold text-2xl">About the campaign</h2>
+                 <div class="p-4 w-[320px] h-[420px] bg-white rounded-xl mb-3">
+                    <div class="h-[180px] w-full bg-gray-200">
+                        
+                    </div>
+                    <h3 class="font-bold py-2">Mango Tree</h3>
+                    <p class="text-regular h-[80px]">A fast-growing tropical tree that produces delicious, juicy mangoes
+                        during summer. Its dense green</p>
+                    <div class="flex justify-between py-3">
+                        <p class="bg-[#A4FDC5] h-[22px] w-[100px] text-center rounded-2xl"> Fruit Tree </p>
+                        <p class="pr-5">৳500</p>
+                    </div>
+                    <button class="bg-[#15803D] w-full h-[30px] text-white rounded-2xl">Add to Cart</button>
+                </div>  
 
-        <div class="lg:w-7/12 mx-auto lg:flex">
-        <img class="lg:w-50%" src="./assets/about.png" alt="">
-       
-
-        <div class="lg:w-[50%] py-30">
-            
-        <p class="py-6 px-3">Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.</p>
-       
-          <ul class="px-8">
-
-            <li>Restoration of natural habitats</li>
-            <li>Improvement of air quality</li>
-            <li>Support for local communities</li>
-          
-        </ul>
-       
+                 <div class="p-4 w-[320px] h-[420px] bg-white rounded-xl mb-3">
+                    <div class="h-[180px] w-full bg-gray-200">
+                        
+                    </div>
+                    <h3 class="font-bold py-2">Mango Tree</h3>
+                    <p class="text-regular h-[80px]">A fast-growing tropical tree that produces delicious, juicy mangoes
+                        during summer. Its dense green</p>
+                    <div class="flex justify-between py-3">
+                        <p class="bg-[#A4FDC5] h-[22px] w-[100px] text-center rounded-2xl"> Fruit Tree </p>
+                        <p class="pr-5">৳500</p>
+                    </div>
+                    <button class="bg-[#15803D] w-full h-[30px] text-white rounded-2xl">Add to Cart</button>
+                </div>  
+ 
+            </div>
+             <!-- card part end -->
+  
+             <!-- history part start -->
+             <div class="history-part  w-1/12 bg-white mb-25 rounded-md">
+                <div class="mr-25 w-[115px] ">
+                    <h2 class="font-bold text-medium text-center">Your Cart</h2>
+                </div>
+            </div> 
+            <!-- history part end -->
         </div>
 
-      </div>
-    
+
+    </section>
+
+    <!-- campaign section start -->
+    <section class="campaign mx-auto bg-[#F0FDF4] ">
+        <h2 class="text-center py-5 text-[#1F2937] font-bold text-2xl">About the campaign</h2>
+        <div class="lg:w-7/12 mx-auto lg:flex">
+            <img class="lg:w-50%" src="./assets/about.png" alt="">
+            <div class="lg:w-[50%] py-30">
+                <p class="py-6 px-3">Green Earth is a global tree plantation initiative dedicated to fighting climate
+                    change. Since our start, we've planted over 500,000 trees worldwide. By joining our campaign, you
+                    help restore forests, create habitats for wildlife, and combat global warming.</p>
+
+                <ul class="px-8">
+
+                    <li>Restoration of natural habitats</li>
+                    <li>Improvement of air quality</li>
+                    <li>Support for local communities</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
     </section>
     <!-- campaign section end -->
 
@@ -125,53 +212,54 @@
     <section class="our-impact bg-[#CFF0DC] h-[630px] lg:h-[436px]">
 
         <h2 class="text-center text-[#1F2937] font-bold text-xl pt-10">Our Impact</h2>
-          
-          <div class="ml-9 mt-6 lg:flex gap-10 justify-center items-center mt-6">
 
-          <div class="mb-5 w-[350px] text-center shadow-sm lg:w-[416px] h-[156px] bg-white rounded-xl">
-            <h2 class="text-[#15803D] font-bold text-2xl pt-11">500K+</h2>
-            <p>Trees planted</p>
-          </div>
+        <div class="ml-9 mt-6 lg:flex gap-10 justify-center items-center">
 
-          <div class="mb-5 w-[350px] text-center shadow-sm lg:w-[416px] h-[156px] bg-white rounded-xl">
-             <h2 class="text-[#15803D] font-bold text-2xl pt-11">120+</h2>
-            <p>Communities Involved </p>
-          </div>
+            <div class="mb-5 w-[350px] text-center shadow-sm lg:w-[416px] h-[156px] bg-white rounded-xl">
+                <h2 class="text-[#15803D] font-bold text-2xl pt-11">500K+</h2>
+                <p>Trees planted</p>
+            </div>
 
-          <div class="mb-5 w-[350px] text-center shadow-sm lg:w-[416px] h-[156px] bg-white rounded-xl">
-             <h2 class="text-[#15803D] font-bold text-2xl pt-11">30+</h2>
-            <p>Countries Reached</p>
-          </div>
+            <div class="mb-5 w-[350px] text-center shadow-sm lg:w-[416px] h-[156px] bg-white rounded-xl">
+                <h2 class="text-[#15803D] font-bold text-2xl pt-11">120+</h2>
+                <p>Communities Involved </p>
+            </div>
+
+            <div class="mb-5 w-[350px] text-center shadow-sm lg:w-[416px] h-[156px] bg-white rounded-xl">
+                <h2 class="text-[#15803D] font-bold text-2xl pt-11">30+</h2>
+                <p>Countries Reached</p>
+            </div>
 
 
 
-         </div>
-         
+        </div>
+
     </section>
     <!-- our impact section end -->
-     
     <!--Tree today section start  -->
     <section class="tree-today bg-[#166534] lg:h-[500px]">
-            
-          
-           <h1 class="text-white font-bold text-xl text-center pt-10 pb-8">Plant a Tree Today</h1>
 
-        <div class="bg-[#15803D] w-[370px] mx-auto h-[100px] mt-10 rounded-xl lg:w-[450px] h-[300px] ">
 
-            
-           <div class="text-center pt-12">
-            <input type="text" placeholder="Your Name" class="input border-[#E4E4E7]" /> <br>
-            <input type="text" placeholder="Your Email Address" class="input mt-5 mb-5 border-[#E4E4E7]" /> <br>
-             <select class="select select-neutral border-[#E4E4E7] text-[#000000]">
-            <option disabled selected>Number of Trees</option>
-            <option>1</option>
-            <option>2</option>
-           <option>3</option>
-           </select>
-          
-            <button class="mt-5 w-[315px] lg:btn btn-active btn-warning rounded-2xl text-[#15803D] bg-[#FACC15] h-[25px] border-1 border-gray-500">Donate Now</button>
+        <h1 class="text-white font-bold text-xl text-center pt-10 pb-8">Plant a Tree Today</h1>
 
-           </div>
+        <div class="bg-[#15803D] w-[370px] mx-auto  mt-10 rounded-xl lg:w-[450px] h-[300px] ">
+
+
+            <div class="text-center pt-12">
+                <input type="text" placeholder="Your Name" class="input border-[#E4E4E7]" /> <br>
+                <input type="text" placeholder="Your Email Address" class="input mt-5 mb-5 border-[#E4E4E7]" /> <br>
+                <select class="select select-neutral border-[#E4E4E7] text-[#000000]">
+                    <option disabled selected>Number of Trees</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+
+                <button
+                    class="mt-5 w-[315px] lg:btn btn-active btn-warning rounded-2xl text-[#15803D] bg-[#FACC15] h-[25px] border-1 border-gray-500">Donate
+                    Now</button>
+
+            </div>
         </div>
 
     </section>
@@ -187,4 +275,5 @@
 
     <script src="./index.js"></script>
 </body>
-</html> 
+
+</html>
