@@ -2,7 +2,7 @@ const loadCategories = () => {
 	fetch('https://openapi.programming-hero.com/api/categories')
 		.then((res) => res.json())
 		.then((json) => displayCategory(json.categories))
-}
+};
 
 const displayCategory = (categories) => {
 	//    get the container & empty
@@ -10,14 +10,11 @@ const displayCategory = (categories) => {
 	categoryContainer.innerHTML = ''
 	// get into every categories
 	for (let category of categories) {
-		categoryContainer.innerHTML += `<button onclick="loadCategoryPlants(${category.id})" class="btn btn-primary block py-2 w-full text-left">${category.category_name}
+		categoryContainer.innerHTML += `<button onclick="loadCategoryPlants(${category.id})" class="btn btn-primary block py-2 w-full text-left bg-[#15803D] ">${category.category_name}
        </button>
        `
 	}
-}
-
-
-
+};
 
 const loadCategoryPlants = (id) => {
    
@@ -48,8 +45,9 @@ const loadCategoryPlants = (id) => {
                 const card = document.createElement("div");
                 card.innerHTML=`
                 <div class="p-4 w-[320px] h-[450px] bg-white rounded-xl mb-3">
-                    <div class="h-[180px] w-[311px]">
-                        ${tree.image}
+                    <div class="h-[180px] w-[300px]">
+                    <img class="h-[180px] w-[290px]" src="${tree.image}" alt="">
+                        
                     </div>
                     <h3 class="font-bold py-2">${tree.name}</h3>
                     <p class="text-regular h-[120px]">${tree.description}</p>
@@ -60,17 +58,19 @@ const loadCategoryPlants = (id) => {
                     <button class="bg-[#15803D] w-full h-[30px] text-white rounded-2xl">Add to Cart</button>
                 </div> 
                 
-                `;
+                `;  
                 cardContainer.append(card);
+
+
+    
             }
             
             
 
         }
-}
+};
+
+loadCategories();
 
 
 
-
-
-loadCategories()
