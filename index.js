@@ -31,7 +31,6 @@ const displayCategory = (categories) => {
 	// get into every categories
 	for (let category of categories) {
 		categoryContainer.innerHTML += `
-        
         <button onclick="loadCategoryPlants(${category.id})" class=" block py-2 w-full text-left hover:bg-[#15803D] ">${category.category_name}
        </button>
        `
@@ -79,6 +78,42 @@ displayTreeDetails =(plant) =>{
     `;
     document.getElementById("my_modal_5").showModal();
 }
+
+
+ const url = `https://openapi.programming-hero.com/api/plants`;
+ fetch(url)
+ .then((res) => res.json())
+ .then((data) => {
+    displayallPlants(data.plants)
+ });
+
+const displayallPlants = (woods) =>{
+    // console.log(woods);
+    const AllCardContainer = document.getElementById("card-conainer");
+    for(const wood of woods){
+        // console.log(wood);
+        const card = document.createElement("div");
+                card.innerHTML=
+                `
+                <div class="p-4 w-[320px] h-[450px] bg-white rounded-xl mb-3">
+                    <div class="h-[180px] w-[300px]">
+                    <img class="h-[180px] w-[290px]" src="${wood.image}" alt="">
+                        
+                    </div>
+                    <h3 onclick="loadTreeDetail(${wood.id})" class="font-bold py-2">${wood.name}</h3>
+                    <p class="text-regular h-[120px]">${wood.description}</p>
+                    <div class="flex justify-between py-3">
+                        <div><p class="bg-[#A4FDC5] h-[22px] w-[200px] text-center rounded-2xl">${wood.category}</p></div>
+                        <div><p class="pr-5">৳${wood.price}</p></div>
+                    </div>
+                    <button class="bg-[#15803D] w-full h-[30px] text-white rounded-2xl cart-btn">Add to Cart</button>
+                </div> 
+                
+                `;  
+                AllCardContainer.append(card);
+    }
+}
+
 
 
 const loadCategoryPlants = (id) => {
